@@ -44,5 +44,6 @@ print("--- Brute Force Decryption Mode ---")
 brute_text = check_string("Enter the message to decrypt: ")
 
 for shift in range(1, 26):
+    # Caesar encryption adds the shift; decryption uses the inverse shift
     decrypted_message = caesar_cipher(brute_text, -shift)
     print(f'[{shift:02}] {decrypted_message}')
