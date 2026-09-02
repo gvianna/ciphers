@@ -32,7 +32,7 @@ def atbash_cipher(text: str) -> str:
                 first = ord("a")
 
             position = ord(char) - first
-            atbash_position = 25 - position
+            atbash_position = (25 - position) % 26
             code = first + atbash_position
             cipher += chr(code)
 
