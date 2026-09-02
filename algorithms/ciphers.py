@@ -37,3 +37,35 @@ def atbash_cipher(text: str) -> str:
             cipher += chr(code)
 
     return cipher
+
+
+# Vigenère Cipher
+def vigenere_cipher(text: str, key: str, decrypt: bool = False) -> str:
+    key_index = 0
+    key = key.upper()
+    cipher = ""
+
+    for char in text:
+        if not char.isalpha():
+            cipher += char
+        else:
+            if char.isupper():
+                first = ord("A")
+            else:
+                first = ord("a")
+
+            key_char = key[key_index]
+            key_position = ord(key_char) - ord("A")
+            position = ord(char) - first
+
+            if decrypt:
+                vigenere_position = (position - key_position) % 26
+            else:
+                vigenere_position = (position + key_position) % 26
+
+            code = first + vigenere_position
+            cipher += chr(code)
+
+            key_index = (key_index + 1) % len(key)
+
+    return cipher
