@@ -65,8 +65,8 @@ def main():
         print("🔐 CIPHER TOOL 🔐".center(30, "-"))
         print("═" * 33)
         print("MAIN MENU".center(32, " "))
-        print("  [1]  Caesar Cipher 🏛️")
-        print("  [2]  Atbash Cipher 🪞")
+        print("  [1]  Caesar Cipher ")
+        print("  [2]  Atbash Cipher ")
         print("  [3]  Exit ❌")
         print("═" * 33)
 
@@ -75,7 +75,7 @@ def main():
         if choice == 1:
             while True:
                 print("\n" + "═" * 33)
-                print("🏛️ CAESAR CIPHER 🏛️".center(30, "-"))
+                print(" CAESAR CIPHER ".center(30, "-"))
                 print("═" * 33)
                 print("  [1]  Encrypt 🔒")
                 print("  [2]  Decrypt 🔓")
@@ -116,7 +116,7 @@ def main():
         elif choice == 2:
             while True:
                 print("\n" + "═" * 33)
-                print("🪞 ATBASH CIPHER 🪞".center(30, "-"))
+                print(" ATBASH CIPHER ".center(30, "-"))
                 print("═" * 33)
                 print("  [1]  Encrypt/Decrypt 🔄")
                 print("  [2]  Info ℹ️")
