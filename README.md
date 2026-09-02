@@ -9,6 +9,12 @@ Features:
 - Decrypt messages
 - Brute-force Caesar cracking
 
+## Atbash Cipher
+
+Features:
+- Encrypt messages
+- Decrypt messages
+
 ## Usage
 
 Run:
