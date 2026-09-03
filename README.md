@@ -1,26 +1,26 @@
 # 🔐 Ciphers
 
-Uma coleção de **cifras clássicas de substituição** implementadas em Python.
+A collection of **classical substitution ciphers** implemented in Python.
 
-O projeto foi desenvolvido como parte dos meus estudos de **Python** durante minha graduação em **Análise e Desenvolvimento de Sistemas**, com foco na implementação dos algoritmos, organização do código e aplicação de conceitos de programação.
+This project was developed as part of my **Python** studies during my degree in **Systems Analysis and Development**, focusing on algorithm implementation, code organization, and the application of programming concepts.
 
-## ✨ Funcionalidades
+## ✨ Features
 
-Atualmente, o projeto conta com três algoritmos de criptografia:
+The project currently includes three encryption algorithms:
 
-* **Caesar Cipher** — deslocamento das letras do alfabeto
-* **Atbash Cipher** — substituição de cada letra pela posição correspondente no alfabeto invertido
-* **Vigenère Cipher** — cifra polialfabética baseada em uma palavra-chave
+* **Caesar Cipher** — shifts letters of the alphabet
+* **Atbash Cipher** — replaces each letter with its corresponding position in the reversed alphabet
+* **Vigenère Cipher** — a polyalphabetic cipher based on a keyword
 
-O programa possui um menu interativo que permite selecionar o algoritmo e realizar operações de **criptografia e descriptografia**.
+The program features an interactive menu that allows users to select an algorithm and perform **encryption and decryption** operations.
 
-## 🔑 Cifras implementadas
+## 🔑 Implemented Ciphers
 
 ### Caesar Cipher
 
-A cifra de César desloca cada letra do texto por uma quantidade determinada de posições no alfabeto.
+The Caesar cipher shifts each letter of the text by a specified number of positions in the alphabet.
 
-Por exemplo, com deslocamento `3`:
+For example, with a shift of `3`:
 
 ```text
 A → D
@@ -28,25 +28,25 @@ B → E
 C → F
 ```
 
-Exemplo:
+Example:
 
 ```text
 HELLO
 ```
 
-com deslocamento `3`:
+with a shift of `3`:
 
 ```text
 KHOOR
 ```
 
-A descriptografia utiliza o deslocamento inverso.
+Decryption uses the inverse shift.
 
 ---
 
 ### Atbash Cipher
 
-A cifra Atbash utiliza o alfabeto invertido para realizar a substituição:
+The Atbash cipher uses the reversed alphabet to perform the substitution:
 
 ```text
 A ↔ Z
@@ -54,44 +54,44 @@ B ↔ Y
 C ↔ X
 ```
 
-Exemplo:
+Example:
 
 ```text
 HELLO
 ```
 
-resulta em:
+results in:
 
 ```text
 SVOOL
 ```
 
-Como a transformação é simétrica, o mesmo algoritmo pode ser utilizado para criptografar e descriptografar.
+Since the transformation is symmetric, the same algorithm can be used for both encryption and decryption.
 
 ---
 
 ### Vigenère Cipher
 
-A cifra de Vigenère utiliza uma **palavra-chave** para determinar diferentes deslocamentos ao longo do texto.
+The Vigenère cipher uses a **keyword** to determine different shifts throughout the text.
 
-Por exemplo, utilizando a chave:
+For example, using the key:
 
 ```text
 KEY
 ```
 
-cada letra da chave determina o deslocamento utilizado para a letra correspondente da mensagem.
+each letter of the key determines the shift applied to the corresponding letter of the message.
 
-Diferentemente da cifra de César, o deslocamento não é necessariamente o mesmo para todo o texto.
+Unlike the Caesar cipher, the shift is not necessarily the same throughout the entire text.
 
-## 🛠️ Tecnologias
+## 🛠️ Technologies
 
 * **Python 3**
-* Biblioteca padrão do Python
+* Python Standard Library
 
-O projeto não depende de bibliotecas externas para executar os algoritmos de criptografia.
+The project does not depend on external libraries to perform the encryption algorithms.
 
-## 📁 Estrutura do projeto
+## 📁 Project Structure
 
 ```text
 ciphers/
@@ -107,64 +107,64 @@ ciphers/
 └── .gitignore
 ```
 
-## ▶️ Como executar
+## ▶️ How to Run
 
-Clone o repositório:
+Clone the repository:
 
 ```bash
 git clone https://github.com/SEU-USUARIO/ciphers.git
 ```
 
-Entre na pasta do projeto:
+Navigate to the project directory:
 
 ```bash
 cd ciphers
 ```
 
-Execute o programa:
+Run the program:
 
 ```bash
 python main.py
 ```
 
-O menu principal permite escolher a cifra e a operação desejada.
+The main menu allows you to choose the cipher and the desired operation.
 
-## 🔎 Validação de entrada
+## 🔎 Input Validation
 
-O projeto possui funções de validação para controlar os dados fornecidos pelo usuário.
+The project includes validation functions to handle user-provided input.
 
-Entre os dados validados estão:
+The validated inputs include:
 
-* Textos utilizados nas mensagens
-* Valores inteiros
-* Intervalos permitidos para os deslocamentos
-* Chaves utilizadas pela cifra de Vigenère
+* Text used in messages
+* Integer values
+* Valid ranges for shifts
+* Keys used by the Vigenère cipher
 
-A lógica de validação foi separada do restante do programa para manter uma melhor organização do código.
+The validation logic is separated from the rest of the program to maintain better code organization.
 
-## 🧠 Conceitos praticados
+## 🧠 Concepts Practiced
 
-O desenvolvimento do projeto permite praticar diversos conceitos fundamentais de Python:
+The development of this project provides practice with several fundamental Python concepts:
 
-* Funções
-* Módulos e imports
-* Listas e strings
+* Functions
+* Modules and imports
+* Lists and strings
 * Loops
-* Condicionais
-* Manipulação de caracteres
-* `ord()` e `chr()`
-* Operador módulo `%`
-* Validação de dados
-* Organização de projetos em múltiplos arquivos
-* Reutilização de funções
-* Separação de responsabilidades
+* Conditionals
+* Character manipulation
+* `ord()` and `chr()`
+* Modulo operator `%`
+* Data validation
+* Organizing projects into multiple files
+* Function reuse
+* Separation of responsibilities
 
-## ⚠️ Observação
+## ⚠️ Note
 
-As cifras implementadas neste projeto são **algoritmos históricos de criptografia** e não devem ser utilizadas para proteger informações reais.
+The ciphers implemented in this project are **historical cryptographic algorithms** and should not be used to protect real information.
 
-Cifras como César, Atbash e Vigenère podem ser quebradas com técnicas relativamente simples e têm finalidade principalmente **educacional**.
+Ciphers such as Caesar, Atbash, and Vigenère can be broken using relatively simple techniques and are primarily intended for **educational purposes**.
 
-## 📜 Licença
+## 📜 License
 
-Este projeto foi desenvolvido para fins educacionais e de estudo.
+This project was developed for educational and study purposes.
